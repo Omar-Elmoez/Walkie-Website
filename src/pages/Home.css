@@ -1,0 +1,118 @@
+.welcomeDiv {
+    background-color: #f4f0f0;
+    padding-block: 60px;
+}
+.welcomeDiv__content {
+    background-color: white;
+    box-shadow: 0px 4px 87px rgba(0, 0, 0, 0.1);
+    padding-block: 40px;
+    width: 80%;
+    font-family: var(--rubik);
+    text-align: center;
+    margin: auto;
+}
+.welcomeDiv__content span {
+    color: #FD5B1F;
+}
+.welcomeDiv__heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.welcomeDiv__para {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 80%;
+    line-height: 1.4;
+    margin: 20px auto 0;
+}
+.coffeCards {
+    display: flex;
+    gap: 20px;
+}
+.discount {
+    width: 90%;
+    margin: 50px auto;
+    padding-block: 25px;
+}
+.discount__content {
+    background-color: #F1F1F1;
+    width: 95%;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 930px) {
+    .discount__content {
+        flex-direction: column;
+        gap: 20px;
+        padding-block: 15px;
+        justify-content: center;
+    }
+}
+.discount__text {
+    font-family: var(--roboto);
+    text-align: center;
+}
+.discount__text h3 {
+    font-size: 1.875rem;
+}
+.discount__text h3 span {
+    color: #FD5B1F;
+}
+.discount__text p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+.discount__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.discount__info button {
+    width: 155px;
+    font-family: var(--rubik);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-block: 6px;
+    background-color: #214E8A;
+    color: white;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    margin-left: -50%;
+}
+@media (max-width: 930px) {
+    .discount__info button {
+        margin: 0;
+    }
+}
+.worldDiv {
+    padding-top: 80px;
+}
+.worldDiv h3 {
+    font-family: var(--roboto);
+    font-size: 2.25rem;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.world__imgbx {
+    margin: 50px auto 0;
+    width: 60%;
+}
+@media (max-width: 800px) {
+    .worldDiv h3 {
+        font-size: 1.5rem;
+    }
+    .world__imgbx {
+        width: 100%;
+    }
+}

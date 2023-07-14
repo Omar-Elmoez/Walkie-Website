@@ -1,0 +1,250 @@
+.cafeCard {
+    background-color: #f4f0f0;
+    padding-block: 60px;
+}
+.cafeCard__contentBx {
+    font-family: var(--rubik);
+    background-color: white;
+    padding-block: 30px;
+    box-shadow: 0px 4px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.cafeCard__info {
+    color: #214E8A;
+}
+.cafeCard__info_header {
+    display: flex;
+    align-items: flex-end;
+    text-transform: capitalize;
+    gap: 20px;
+    position: relative;
+}
+@media (max-width: 480px) {
+    .cafeCard__info_header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 700px) {
+    .cafeCard__info_header img {
+        width: 50px;
+    }
+}
+.cafeCard__info_header h3 {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 30px;
+    position: relative;
+}
+@media (max-width: 480px) {
+    .cafeCard__info_header h3 {
+        font-size: 1rem;
+    }
+}
+.cafeCard__info_header h3::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to right, #FF5213, #214E8A);
+    height: 3px;
+    width: 100%;
+    bottom: -3px;
+}
+.cafeCard__info_header h3 .icon {
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 480px) {
+    .cafeCard__info_header h3 .icon {
+        width: 20px;
+    }
+}
+.cardCafe__dots {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FD5B1F;
+    font-size: 30px;
+    cursor: pointer;
+}
+.cafeCard__miniMenu {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+}
+.cafeCard__miniMenu > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.cafeCard__miniMenu > div img {
+    width: 33px;
+    height: 33px;
+} 
+.cardCafe__img {
+    margin-top: 35px;
+    position: relative;
+}
+.cardCafe__img::before {
+    content: '';
+    position: absolute;
+    width: 98.3%;
+    height: 99.1%;
+    right: 0;
+    background-color: rgba(0, 0, 0, .1);
+}
+.cardCafe__reaction {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 15px;
+    gap: 30px;
+    position: relative;
+}
+@media (max-width: 1055px) {
+    .cardCafe__reaction {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.cardCafe__reaction::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: rgba(0, 109, 255, 0.67);
+    bottom: -30px;
+}
+.cardCafe__reaction__firstBx {
+    display: flex;
+    gap: 80px;
+    width: 100%;
+}
+@media (max-width: 1055px) {
+    .cardCafe__reaction__firstBx {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+.cardCafe__reactionIcons {
+    display: flex;
+    gap: 30px;
+}
+.cardCafe__reactionIcons > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.cardCafe__reactionIcons > div img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .cardCafe__reactionIcons > div img {
+        width: 25px;
+    }
+}
+.cardCafe__reactionComment {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 60%;
+    padding-left: 20px;
+}
+@media (max-width: 1055px) {
+    .cardCafe__reactionComment {
+        padding-block: 10px;
+        width: 100%;
+    }
+}
+@media (max-width: 530px) {
+    .cardCafe__reactionComment {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+.cardCafe__reactionComment input {
+    font-family: var(--reem);
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #DBA92A;
+    flex-grow: 1;
+}
+.cardCafe__reactionComment input::placeholder {
+    color: #5E5E5E;
+    font-family: var(--rubik);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.cardCafe__reactionComment button {
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+.cardCafe__reactionComment .commentIcon {
+    color: #DBA92A;
+    font-size: 25px;
+
+}
+.cafeCard__location {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    color: #214E8A;
+    font-size: 35px;
+}
+.cafeCard__userInfo {
+    margin: 45px 0 0 15px;
+    width: 50%;
+}
+@media (max-width: 900px) {
+    .cafeCard__userInfo {
+        width: 100%;
+    }
+}
+.cafeCard__userInfo_header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cafeCard__userInfo_header h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.cafeCard__userInfo_header button {
+    font-size: 1.375rem;
+    border: 2px solid #FD5B1F;
+    padding-block: 5px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+}
+.cafeCard__userInfo p {
+    color: black;
+    font-size: 1.125rem;
+    margin-top: 15px;
+    line-height: 1.3;
+    width: 95%;
+}
+.cafeCard__userInfo p a {
+    color: rgba(0, 109, 255, 0.67);
+}

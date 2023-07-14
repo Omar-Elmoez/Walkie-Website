@@ -1,0 +1,79 @@
+/* ===================== Global Rules ===================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    text-transform: capitalize;
+}
+input,
+button {
+    outline: none;
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul li:hover {
+    color: #FD5B1F;
+}
+img {
+    max-width: 100%;
+}
+/* ===================== Variables ===================== */
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --rubik: 'Rubik', sans-serif;
+    --reem: 'Reem Kufi', sans-serif;
+}
+
+/* ===================== Custom Classes ===================== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.logo {
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 3rem;
+    color: white;
+}
+.logo span {
+    color: #FD5B1F;
+}
+.registerBody {
+    background-image: url('/imgs/registerImg.svg');
+    background-size: cover;
+    height: 100vh;
+}
+.registerBody::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+.placesDiv__heading {
+    position: relative;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+}
+.placesDiv__heading::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: -15px;
+}

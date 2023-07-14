@@ -1,0 +1,77 @@
+.header {
+    height: 140px;
+}
+.header::after{
+    content: '';
+    position: absolute;
+    width: 76%;
+    background-color: white;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+@media (max-width: 900px) {
+    .header::after {
+        bottom: -15px;
+    }
+    .header[data-page = 'aboutus'],
+    .header[data-page = 'contactus'] {
+        height: 160px;
+    }
+    .header[data-page = 'aboutus']::after,
+    .header[data-page = 'contactus']::after {
+        content: none;
+    }
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 900px) {
+    .header__nav {
+        flex-direction: column;
+    }
+}
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.header__list li {
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: white;
+}
+@media (max-width: 900px) {
+    .header__list li {
+        font-size: 1rem;
+    }
+}
+.header__list .header__userIcon {
+    width: 35px;
+    height: 35px;
+    color: #696969;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    font-size: 1.25rem;
+}
+@media (max-width: 900px) {
+    .header__list .header__userIcon {
+        font-size: 1rem;
+    }
+}
+.header__userIcon .icon:hover {
+    color: #FD5B1F;
+}

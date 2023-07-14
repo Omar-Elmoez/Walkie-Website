@@ -1,0 +1,51 @@
+.heroDiv {
+    padding-block: 60px;
+}
+.heroDiv__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 900px) {
+    .heroDiv__info {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+.heroDiv__info_heading,
+.heroDiv__info_text {
+    width: 100%;
+}
+.heroDiv__info_heading {
+    font-family: var(--roboto);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.heroDiv__info_heading span {
+    color: #FD5B1F;
+}
+.heroDiv__info_text {
+    font-family: var(--rubik);
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+.heroDiv__imgBx {
+    margin-top: 50px;
+    position: relative;
+}
+.heroDiv__imgBx::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    background-color: gray;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}

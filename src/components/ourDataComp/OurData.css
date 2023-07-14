@@ -1,0 +1,115 @@
+.ourDataDiv {
+    padding-block: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.dataBox {
+    font-family: var(--rubik);
+    box-shadow: 0px 12px 45px 6px rgba(0, 0, 0, 0.1);
+    padding-block: 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.dataBox__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 900px) {
+    .dataBox__content {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+.dataBox__heading {
+    color: #FD5B1F;
+    font-size: 2.25rem;
+    width: 40%;
+    position: relative;
+    text-align: center;
+}
+.dataBox__heading::before {
+    position: absolute;
+    content: '';
+    width: 30%;
+    background-color: #FD5B1F;
+    height: 5px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+@media (max-width: 900px) {
+    .dataBox__heading {
+        width: 100%;
+        text-align: center;
+    }
+}
+.dataBox__teamBx,
+.dataBox__textBx {
+    width: 100%;
+}
+.dataBox__textBx {
+    font-weight: 400;
+}
+.dataBox__firstPara {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+@media (max-width: 900px) {
+    .dataBox__firstPara {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+}
+.dataBox__secondPara {
+    color: #5E5E5E;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-align: center;
+}
+@media (max-width: 900px) {
+    .dataBox__secondPara {
+        line-height: 1.5;
+    }
+}
+.dataBox__teamBx {
+    font-family: var(--rubik);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.dataBox__teamBx > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: calc(100% / 3);
+}
+@media (max-width: 900px) {
+    .dataBox__teamBx > div {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+.dataBox__teamBx > div img {
+    width: 50px;
+}
+.dataBox__teamBx > div span {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+@media (max-width: 900px) {
+    .dataBox__teamBx > div span {
+        font-size: 1rem;
+    }
+}

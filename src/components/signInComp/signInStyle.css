@@ -1,0 +1,131 @@
+.main {
+    position: relative;
+    margin-top: 100px;
+    font-family: var(--roboto);
+    color: white;
+}
+.main__heading {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+}
+.main__content {
+    background-image: url('/imgs/Ellipse 1.svg');
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    padding-top: 50px;
+}
+@media (max-width: 800px) {
+    .main__content {
+        background-size: auto;
+    }
+}
+.signInBox__heading {
+    font-size: 2.56rem;
+}
+.signInBox__form {
+    max-width: 500px;
+    margin: 60px auto 0;
+}
+.signInBox__btn,
+.signInBox__form input {
+    font-family: var(--roboto);
+    font-size: 1.125rem;
+    padding-block: 1rem;
+    width: 90%;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+.signInBox__form input {
+    font-weight: 400;
+    text-indent: 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+::placeholder {
+    color: white;
+}
+.signInBox__passwordInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+    position: relative;
+}
+.singInBox__forgetPass {
+    margin: 15px auto 0 50px;
+    height: 30px;
+    border-bottom: 1px solid;
+    letter-spacing: 1px;
+}
+.signInBox__icon {
+    position: absolute;
+    right: 50px;
+    font-size: 25px;
+    color: #D8D8D8;
+    top: 14px;
+    cursor: pointer;
+}
+.signInBox__btn {
+    font-weight: 500;
+    color: #214E8A;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.signInBox__Or {
+    margin: 20px auto 0;
+    position: relative;
+}
+.signInBox__Or::before,
+.signInBox__Or::after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    background-color: white;
+    bottom: 9px;
+}
+.signInBox__Or::before {
+    left: 34%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.signInBox__Or::after {
+    right: 34%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+.signInBox__social {
+    width: 58%;
+    margin: 10px 0 0 35px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.signInBox__social .icon {
+    font-size: 25px;
+}
+.signInBox__social_google {
+    background-color: #FD5B1F;
+    padding: 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

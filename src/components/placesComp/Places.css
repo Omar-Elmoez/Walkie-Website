@@ -1,0 +1,113 @@
+.placesDiv {
+    padding-block: 40px;
+    background-color: white;
+    font-family: var(--rubik);
+}
+.placesDiv__imgs {
+    margin-top: 60px;
+}
+.placesDiv__imgs_firstgroup,
+.placesDiv__imgs_secondgroup {
+    display: flex;
+    gap: 30px;
+}
+@media (max-width: 1040px) {
+    .placesDiv__imgs_firstgroup,
+    .placesDiv__imgs_secondgroup {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.placesDiv__imgs_secondgroup {
+    margin-top: 30px;
+}
+.placesDiv__imgBox {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px 0px 150px 0px;
+    -webkit-border-radius: 0px 0px 150px 0px;
+    -moz-border-radius: 0px 0px 150px 0px;
+    -ms-border-radius: 0px 0px 150px 0px;
+    -o-border-radius: 0px 0px 150px 0px;
+}
+.placesDiv__imgBox::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 98.5%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.placesDiv__info {
+    position: absolute;
+    top: 0;
+    text-transform: capitalize;
+    color: white;
+    width: 70%;
+    left: 30px;
+    top: 50px;
+}
+.placesDiv__info h4 {
+    font-size: 1.3rem;
+}
+.placesDiv__info p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+@media (max-width: 390px) {
+    .placesDiv__info h4 {
+        font-size: 1rem;
+    }
+    .placesDiv__info p {
+        font-size: .8rem;
+    }
+}
+
+.placesDiv__imgCards {
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+}
+@media (max-width: 900px) {
+    .placesDiv__imgCards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.placesDiv__imgCards > div h3 {
+    margin-top: 15px;
+}
+.secondContent__icons {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+@media (max-width: 900px) {
+    .secondContent__icons {
+        flex-wrap: wrap;
+    }
+}
+.secondContent__icons > div {
+    text-align: center;
+}
+.secondContent__icons > div h4 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.secondContent__icons > div p {
+    margin-top: 10px;
+}
+.secondContent__icons .iconBox {
+    width: 142px;
+    height: 142px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.secondContent__icons .iconBox .icon {
+    font-size: 60px;
+}

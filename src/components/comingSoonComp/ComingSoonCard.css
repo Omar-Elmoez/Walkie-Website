@@ -1,0 +1,46 @@
+.comingCard {
+    background-image: linear-gradient(180deg, #FD5B1F 0%, #214E8A 100%);
+    border-radius: 10px;
+    padding: 12px 10px;
+}
+.comingCard img {
+    width: 100%;
+}
+.comingCard__text {
+    text-transform: capitalize;
+    font-family: var(--rubik);
+    color: white;
+    margin-top: 10px;
+}
+.comingCard__text h3 {
+    font-size: 1.5rem;
+}
+.comingCard__text h3 span,
+.comingCard__text p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.comingCard__text h3 span {
+    color: #FD5B1F;
+    margin-left: 5px;
+}
+.comingCard__text p {
+    margin-top: 10px;
+}
+.comingCard button {
+    padding-block: 5px;
+    width: 132px;
+    background-color: transparent;
+    font-family: var(--rubik);
+    font-weight: 400;
+    font-size: 1.375rem;
+    color: white;
+    border: 2px solid;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    display: block;
+    margin-left: auto;
+}

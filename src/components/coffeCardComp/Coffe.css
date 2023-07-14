@@ -1,0 +1,49 @@
+.coffeCard {
+    font-family: var(--rubik);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 87px rgba(0, 0, 0, 0.1);
+}
+.coffeCard img {
+    width: 100%;
+}
+.coffeCard__text {
+    position: relative;
+    width: 90%;
+    margin: 20px auto 0;
+}
+.coffeCard__heart {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: #F3B13E;
+}
+.coffeCard__text h3 {
+    font-size: 1.5rem;
+    color: #214E8A;
+}
+.coffeCard__text h3 span {
+    color: #FD5B1F;
+}
+.coffeCard__text p {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+.coffeCard__stars {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto 20px;
+}
+.coffeCard__stars .star {
+    color: #F3B13E;
+    width: 18px;
+    height: 18px;
+}
+.coffeCard__stars span {
+    color: #24150C;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-left: 10px;
+}

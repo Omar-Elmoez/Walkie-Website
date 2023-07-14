@@ -1,0 +1,29 @@
+.userComment {
+    padding: 10px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 60%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media (max-width: 530px) {
+    .userComment {
+        width: 90%;
+        margin: auto;
+    }
+}
+.userCommnet img {
+    width: 30px;
+    height: 30px;
+}
+.userComment p {
+    font-family: var(--reem);
+    font-size: 1.125rem;
+    color: black;
+}
