@@ -1,6 +1,4 @@
-import Header from "../components/headerComp/Header";
-import Sign from "../components/signInComp/SignIn";
-import Footer from "../components/footerComp/Footer";
+import { Header, SignIn as Sign, Footer } from "../components";
 
 export default function SignIn() {
     return (

@@ -1,8 +1,4 @@
-import Header from "../components/headerComp/Header";
-import Hero from "../components/heroComp/Hero";
-import OurData from "../components/ourDataComp/OurData";
-import Footer from "../components/footerComp/Footer";
-
+import { Header, Hero, OurData, Footer } from "../components";
 
 export default function AboutUs() {
     return (
