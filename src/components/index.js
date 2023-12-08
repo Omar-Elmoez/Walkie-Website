@@ -2,7 +2,7 @@ import CafeAndRest from "./cafeAndRestComp/CafeAndRest";
 import CafeCard from "./cafeCardComp/Card";
 import CoffeCard from "./coffeCardComp/Coffe";
 import ComingSoonCard from "./comingSoonComp/ComingSoonCard";
-import contactComp from "./contactComp/Contact";
+import ContactUs from "./contactComp/Contact";
 import Footer from "./footerComp/Footer";
 import Header from "./headerComp/Header";
 import Hero from "./heroComp/Hero";
@@ -18,7 +18,7 @@ export {
   CafeCard,
   CoffeCard,
   ComingSoonCard,
-  contactComp,
+  ContactUs,
   Footer,
   Header,
   Hero,
