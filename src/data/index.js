@@ -24,3 +24,16 @@ export const Links = {
     }
   ]
 }
+
+export const CoffeCardTitles = [
+  'Karam El-Sham',
+  'Coffee Cauldron',
+  'Coffee Bloom',
+  'frio cafe',
+];
+
+export const CommingSoonPlaces = [
+  'One',
+  "Two",
+  "Three",
+]
