@@ -8,7 +8,6 @@ export default function SignIn() {
         
     return (
         <main className='main'>
-            <h2 className='main__heading'>Sign Up</h2>
             <div className="main__content">
                 <div className='signInBox'>
                     <h3 className='signInBox__heading'>Sign In</h3>
