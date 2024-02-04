@@ -1,4 +1,4 @@
-import Header from '../headerComp/Header';
+import Header from '../Layout/headerComp/Header';
 import { FaSearch, FaRegBell, FaHome, FaUsers } from "react-icons/fa";
 import { BsCollectionPlayFill } from "react-icons/bs";
 import { HiArrowUpTray } from "react-icons/hi2";

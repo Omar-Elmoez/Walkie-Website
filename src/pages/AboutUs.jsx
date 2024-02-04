@@ -1,12 +1,10 @@
-import { Header, Hero, OurData, Footer } from "../components";
+import { Layout, Hero, OurData } from "../components";
 
 export default function AboutUs() {
-    return (
-        <>
-            <Header page='aboutus' />
-            <Hero />
-            <OurData />
-            <Footer />
-        </>
-    );
+  return (
+    <Layout page="aboutus">
+      <Hero />
+      <OurData />
+    </Layout>
+  );
 }

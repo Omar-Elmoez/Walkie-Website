@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
-import { Links } from "../../data";
+import { Links } from "../../../data";
 import "./Header.css";
 
 export default function Header(props) {

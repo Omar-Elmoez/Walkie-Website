@@ -5,8 +5,8 @@ import {
   CafeCard,
   CafeAndRest,
   TestimonailsCard,
-  Footer,
 } from "../components";
+import Footer from "../components/Layout/footerComp/Footer";
 import "./Home.css";
 
 export default function Home() {
